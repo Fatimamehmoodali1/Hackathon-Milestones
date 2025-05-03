@@ -1,4 +1,4 @@
-/* Styling form and resume sections */
+/* Styling form and resume sections
 
 body {
     font-family: 'Times New Roman', Times, serif;
@@ -65,7 +65,9 @@ button {
     padding: 10px;
     cursor: pointer;
 }
-
+botton::cue-region(0.4px 8px rgba(0, 0, 0, 0.5){
+    
+}
 button :hover {
     color: purple;
 }
@@ -79,9 +81,140 @@ button :hover {
     background-color: pink;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     /* Making the ressume Editable  */
-    outline: none;
+    /* outline: none;
 }
 
 #resume-display h2 {
     color: black;
+} */ 
+
+/* Apply background image to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img3.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    margin: 0;
+    padding: 0;
+    color: white; /* Text color for better contrast */
 }
+
+
+/* Style the form */
+form {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the form */
+    padding: 20px;
+    margin: 40px auto;
+    width: 60%; /* Adjust form width as needed */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Resume display styles */
+#resume-display {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: rgb(255, 251, 251);
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+/* #shareable-link-container {
+    margin-top: 30px;
+}
+
+#shareable-link-container a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#download-pdf {
+    margin-top: 10px;
+} */
+
+/* Center the shareable link container */
+#shareable-link-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Center the shareable link text and button */
+#shareable-link-container a {
+    color: #1fe223;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#download-pdf {
+    margin-top: 10px;
+    margin-bottom: 70px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#download-pdf:hover {
+    background-color: #45a049;
+}
+
+
